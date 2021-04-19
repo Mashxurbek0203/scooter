@@ -1,0 +1,123 @@
+.process {
+    max-width: 100%;
+    position: relative;
+}
+
+
+.process-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 160px;
+}
+
+
+.process-item {
+    max-width: 350px;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+
+.process-item__header {
+    font-style: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #495567;
+    margin-bottom: 27px;
+}
+
+
+.process-item__description {
+    color: #495567;
+}
+
+
+.process::before {
+    content: '';
+    width: 974px;
+    height: 15px;
+    position: absolute;
+    background: #E5ECF4;
+    top: 208px;
+    left: 0;
+}
+
+
+.process-item::before {
+    content: '';
+    width: 96px;
+    height: 96px;
+    display: block;
+    background: url(../img/icon-locate.svg) no-repeat center center #FCB72B;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+.process-item:nth-child(2)::before {
+    background: url(../img/icon-pick-scooter.svg) no-repeat center center#FCB72B;
+}
+
+
+.process-item:last-child::before {
+    background: url(../img/icon-ride-scooter.svg) no-repeat center center#FCB72B;
+}
+
+
+@media screen and(max-width: 1106px) {
+    .process-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .process-item {
+        display: flex;
+        margin-right: 0;
+        flex-direction: row;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+
+    .process-item::before {
+        margin-bottom: 0;
+        margin-right: 79px;
+    }
+
+
+    .process-item__text {
+        max-width: 398px;
+    }
+
+    .process::before {
+        width: 15px;
+        height: 512px;
+        top: 0;
+        left: 141px;
+    }
+}
+
+
+@media screen and(max-width: 768px) {
+    .process::before {
+        display: none;
+    }
+
+    .process-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .process-item::before {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}

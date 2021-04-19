@@ -1,0 +1,206 @@
+.hero {
+    background: url(../img/hero-bg.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .hero {
+        background: url(../img/hero-bg@2x.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.hero::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #2F3B59;
+    opacity: 0.6;
+}
+
+
+.hero-container {
+    padding: 153px 0 152px;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+}
+
+
+.hero-header {
+    max-width: 515px;
+    line-height: 56px;
+    font-size: 56px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #fff;
+}
+
+
+.hero-description {
+    max-width: 405px;
+    margin-bottom: 40px;
+    margin-left: 95px;
+    position: relative;
+    line-height: 25px;
+}
+
+
+.hero-link {
+    margin-left: 95px;
+}
+
+/* hero before-after*/
+
+
+.hero-description::before {
+    content: '';
+    width: 200%;
+    height: 15px;
+    position: absolute;
+    background: #FCB72B;
+    top: 46px;
+    left: calc(-200% - 57px);
+}
+
+
+.hero-description::after {
+    content: '';
+    width: 447px;
+    height: 138px;
+    position: absolute;
+    top: 46px;
+    right: -487px;
+    background: url(../img/icon-hero-array.svg) no-repeat;
+}
+
+
+@media screen and(max-width: 1106px) {
+    .hero {
+        background: url(../img/hero-bg-tablet.png) no-repeat;
+        background-size: cover;
+    }
+
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+        .hero {
+            background: url(../img/hero-bg-tablet@2x.jpg) no-repeat;
+            background-size: cover;
+        }
+    }
+
+
+    .hero-description {
+        margin-bottom: 32px;
+    }
+
+
+    .hero-description,
+    .hero-link {
+        margin-left: 0;
+    }
+
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 217px;
+        padding-top: 137px;
+    }
+
+
+    .hero-description,
+    .hero-header {
+        max-width: 100%;
+    }
+
+
+    .hero-header {
+        margin-bottom: 24px;
+    }
+
+
+    .hero-description::before {
+        display: none;
+    }
+
+
+    .hero-description::after {
+        display: none;
+
+    }
+
+    .hero-container::before {
+        content: '';
+        width: 447px;
+        height: 138px;
+        position: absolute;
+        top: 473px;
+        left: -220px;
+        background: url(../../img/icon-hero-array.svg) no-repeat;
+    }
+}
+
+
+@media screen and(max-width: 768px) {
+    .hero {
+        background: url(../../img/hero-bg-mobile.jpg) no-repeat;
+        background-size: cover;
+    }
+
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+        .hero {
+            background: url(../img/hero-bg-mobile@2x.jpg) no-repeat;
+            background-size: cover;
+        }
+    }
+
+
+    .hero-container {
+        padding: 115px 0 179px;
+    }
+
+
+    .hero-container::before {
+        top: 470px;
+        left: -312px;
+    }
+
+
+    .hero-header {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+
+    .hero-description {
+        margin-bottom: 34px;
+    }
+}

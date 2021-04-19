@@ -1,0 +1,109 @@
+.registration {
+    max-width: 100%;
+    background: url(../img/registration-circles.png) no-repeat right bottom #495567;
+    // background-position-x: 459px;
+    // background-position-y: 150px;
+}
+
+
+.registration-img-container {
+    height: 56px;
+}
+
+
+.registration-img-link:first-child {
+    margin-right: 18px;
+}
+
+
+.registration-img-link:first-child .registration-img {
+    width: 159px;
+}
+
+
+.registration-img:nth-child(2) .registration-img {
+    width: 182px;
+}
+
+
+.registration-img {
+    border-radius: 5px;
+    height: 56px;
+}
+
+
+.registration-container {
+    display: flex;
+    align-items: center;
+    padding: 102px 0 102px;
+}
+
+
+.registration-header {
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #fff;
+    max-width: 415px;
+    font-weight: 700;
+    margin-right: auto;
+}
+
+
+@media screen and(max-width: 1106px) {
+    .registration {
+        background: url(../img/registration-circles.png) no-repeat right bottom #495567;
+        background-size: conver;
+    }
+
+
+    .registration-container {
+        flex-direction: column;
+        padding: 62px 0;
+    }
+
+    .registration-header {
+        margin-right: 0;
+        text-align: center;
+        margin-bottom: 40px;
+        max-width: 457px;
+    }
+
+
+    .registration-img-container {
+        height: 40px;
+    }
+
+
+    .registration-img-link:first-child,
+    .registration-img-link:first-child .registration-img {
+        width: 113.57px;
+        height: 40px;
+    }
+
+    .registration-img-link:nth-child(2),
+    .registration-img-link:nth-child(2) .registration-img {
+        width: 130px;
+        height: 40px;
+        margin-left: 0;
+    }
+}
+
+
+@media screen and(max-width: 768px) {
+    .registration-container {
+        padding: 88px 0;
+    }
+
+
+    .registration-header {
+        max-width: 100%;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+
+    .registration-img-link:first-child {
+        margin-right: 12.57px;
+    }
+}

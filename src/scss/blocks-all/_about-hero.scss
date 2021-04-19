@@ -1,0 +1,61 @@
+.about-hero {
+    background: url(../../img/about-hero-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .about-hero {
+        background: url(../img/about-hero-bg@2x.jpg) no-repeat;
+        background-size: cover;
+    }
+}
+
+
+.about-hero-container {
+    padding: 72px 0;
+    position: relative;
+}
+
+
+.about-hero-header {
+    line-height: 56px;
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -1.78571px;
+}
+
+
+@media screen and(max-width: 1106px) {
+    .about-hero {
+        background: url(../img/about-hero-tablet-bg.jpg) no-repeat center center;
+        background-size: cover;
+    }
+}
+
+
+@media screen and(max-width: 768px) {
+    .about-hero {
+        background: url(../img/about-hero-mob-bg.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+
+    .about-hero-container {
+        padding: 60px 0;
+    }
+
+
+    .about-hero-header {
+        text-align: center;
+        font-size: 40px;
+        line-height: 40px;
+    }
+}
